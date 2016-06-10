@@ -1,0 +1,52 @@
+<div class="container">
+<div class="row">
+
+  <div class="col-xs-6 col-sm-6 col-m-6 col-l-6 col-xl-6">
+  <h4> Red Corner</h4>
+
+    <div id="redCorner">
+      <h5 id="HRed"><%= scenarios.dataValues.heroOne %></h5>
+    </div>
+  </div>
+
+
+  <div class="col-xs-6 col-sm-6 col-m-6 col-l-6 col-xl-6">
+    <h4>Blue Corner</h4>
+    <div id="blueCorner">
+      <div id="hideBlue"></div>
+      <img id="imgBlue" src=''/>
+      <h5 id="HBlue"><%= scenarios.dataValues.heroTwo %></h5>
+      <p id="PBlue"></p>
+      <!-- <a href=""> </a> -->
+    </div>
+  </div>
+
+</div>
+<div class="row">
+  <div class="panel col-xs-offset-4 col-sm-offset-4 col-md-offset-4 col-l-offset-4 col-xl-offset-4 col-xs-4 col-s-4 col-m-4 col-l-4 col-xl-4">
+    <%= scenarios.dataValues.comment %>
+  </div>
+
+</div>
+
+
+
+
+<div class="row">
+<% if (currentUser) { %>
+  <div class="col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-l-offset-3 col-xl-offset-3 col-xs-6 col-sm-6 col-m-6 col-l-6 col-xl-6">
+    <form id="fight" class="btn-group form-group" role="group" aria-label="..."  data-toggle="buttons-radio">
+      <input id="explanation"type="text" class="form-control"></input>
+      <button id="voteUp" type="submit" class="btn btn-danger">Vote Up</button>
+      <button id="voteDown" type="submit" class="btn btn-primary">Vote Down</button>
+    </form>
+  </div>
+<% } else { %>
+  <div class="col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-l-offset-3 col-xl-offset-3 col-xs-6 col-sm-6 col-m-6 col-l-6 col-xl-6">
+  <p> Please log in to comment</p>
+<% }; %>
+
+</div>
+</div>
+
+</div>

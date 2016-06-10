@@ -1,0 +1,57 @@
+@font-face {
+    font-family: fantasti-font;
+    src: url(fantasti-font.ttf);
+}
+@font-face {
+    font-family: fantique-four;
+    src: url(fantique-four.ttf);
+}
+@font-face {
+    font-family: the-mighty-avengers;
+    src: url(the-mighty-avengers.ttf);
+}
+body {
+  background-image: url('../imgs/dotz.jpeg');
+}
+
+.navbar-default{
+  font-family: fantique-four;
+  font-size: 23px;
+  color: black;
+  background-image: url('../imgs/bg.jpeg');
+  background-repeat: repeat-x;
+
+}
+#brand {
+  font-family: fantasti-font;
+  font-size: 25px;
+  color: black;
+}
+body {
+  background-color: gray;
+}
+.remove {
+  float: right;
+}
+
+.user-scenarios {
+  list-style-type: none;
+}
+.user-scenarios > li{
+  margin: 15px 0;
+}
+
+.user-scenarios > li > a {
+   text-decoration: none;
+   color:black;
+}
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
+    cursor: auto;
+}
+
+a:link:active, a:visited:active {
+    color: black;
+    text-decoration: none;
+}
